@@ -1,9 +1,9 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FrmPage.aspx.cs" Inherits="TemplateWebApp.FrmPage" %>
 
 <%@ Register Src="~/Navigator.ascx" TagPrefix="nav" TagName="Navigator" %>
-<%@ Register Src="~/Catalog.ascx" TagPrefix="ctl" TagName="Catalog" %>
-<%@ Register Src="~/Category.ascx" TagPrefix="cat" TagName="Category" %>
 <%@ Register Src="~/Copyright.ascx" TagPrefix="cpy" TagName="Copyright" %>
+<%@ Register Src="~/Category.ascx" TagPrefix="cat" TagName="Category" %>
+<%@ Register Src="~/Catalog.ascx" TagPrefix="ctl" TagName="Catalog" %>
 
 <!DOCTYPE html>
 
@@ -19,27 +19,23 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="contaier">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12" style="background-color: aquamarine;">
                     <nav:Navigator runat="server" ID="UcNavigator" />
-                    네비게이터
                 </div>
             </div>
             <div class="row" style="height: 200px;">
                 <div class="col-md-4" style="background-color: antiquewhite;">
-                    <cat:Category runat="server" ID="UcCategory" />
-                    카테고리
+                    <cat:Category runat="server" ID="UcCategory"/>
                 </div>
-                <div class="col-md-8" style="background-color: burlywood;">
+                <div class="col-md-8" style="background-color: burlywood">
                     <ctl:Catalog runat="server" ID="UcCatalog" />
-                    카탈로그
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12" style="background-color: cadetblue;">
+                <div class="col-md-12" style="background-color: cadetblue">
                     <cpy:Copyright runat="server" ID="UcCopyright" />
-                    카피라이트
                 </div>
             </div>
         </div>
