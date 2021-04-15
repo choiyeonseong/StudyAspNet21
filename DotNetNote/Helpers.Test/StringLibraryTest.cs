@@ -28,12 +28,22 @@ namespace Helpers.Test
             Assert.AreEqual(expected, actual);
         }
 
+        [Ignore]    // 건너뜀
         [TestMethod]
         public void AddTest()
         {
             var expected = 10;
             var actual = 5 + 5;
             Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void IsPhotoTest()
+        {
+            var imagePath = @"C:\Users\PKNU\Desktop\ㅇㅅㅇ\youtube.png";
+            bool result = BoardLibrary.IsPhoto(imagePath);
+
+            Assert.IsTrue(result,"file extension must be png, jpg, gif");
         }
     }
 }
