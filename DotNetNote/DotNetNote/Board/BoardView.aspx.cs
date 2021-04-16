@@ -1,10 +1,6 @@
 ﻿using DotNetNote.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace DotNetNote.Board
 {
@@ -15,8 +11,8 @@ namespace DotNetNote.Board
         protected void Page_Load(object sender, EventArgs e)
         {
             lnkDelete.NavigateUrl = $"BoardDelete.aspx?Id={Request["Id"]}";
-            lnkModify.NavigateUrl = $"BoardModify.aspx?Id={Request["Id"]}";
-            lnkReply.NavigateUrl = $"BoardReply.aspx?Id={Request["Id"]}";
+            lnkModify.NavigateUrl = $"BoardWrite.aspx?Id={Request["Id"]}&Mode=Edit";
+            lnkReply.NavigateUrl = $"BoardWrite.aspx?Id={Request["Id"]}&Mode=Reply";
 
             _Id = Request["Id"];
             if (_Id == null)
@@ -40,11 +36,11 @@ namespace DotNetNote.Board
 
             // 인코딩 방식 : Text, Html, Mixed
             string encoding = note.Encoding;
-            if (encoding=="Text")
+            if (encoding == "Text")
             {
                 lblContent.Text = Helpers.HtmlUtility.EncodeWithTabAndSpace(content);
             }
-            else if (encoding=="Mixed")
+            else if (encoding == "Mixed")
             {
                 lblContent.Text = content.Replace("\r\n", "<br />");
             }
@@ -57,6 +53,15 @@ namespace DotNetNote.Board
             lblHomepage.Text = $"<a href='{note.Homepage}' target='_blank'>{note.Homepage}</a>";
             lblPostDate.Text = note.PostDate.ToString();
             lblPostIP.Text = note.PostIp;
+
+            if (note.FileName.Length > 1)   // 파일이 첨부되어있음
+            {
+                lblFile.Text = $"{note.FileName} / 다운로드 {note.DownCount}";
+            }
+            else
+            {
+                lblFile.Text = "(None)";
+            }
         }
     }
 }

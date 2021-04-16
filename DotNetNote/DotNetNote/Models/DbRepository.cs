@@ -257,7 +257,7 @@ namespace DotNetNote.Models
         /// </summary>
         public List<Note> GetNoteSummaryByCategory(string category)
         {
-            string sql = 
+            string sql =
                 @"SELECT TOP 3 Id, Title, Name, PostDate, FileName, 
                                FileSize, ReadCount, CommentCount, Step 
                     FROM Notes 
@@ -271,7 +271,7 @@ namespace DotNetNote.Models
         /// </summary>
         public List<Note> GetRecentPosts()
         {
-            string sql = 
+            string sql =
                 @"SELECT TOP 3 Id, Title, Name, PostDate 
                     FROM Notes
                    Order By Id Desc";
@@ -305,7 +305,7 @@ namespace DotNetNote.Models
             parameters.Add("@Opinion", value: model.Opinion, dbType: DbType.String);
             parameters.Add("@Password", value: model.Password, dbType: DbType.String);
 
-            string sql = 
+            string sql =
                 @"Insert Into NoteComments (BoardId, Name, Opinion, Password)
                          Values(@BoardId, @Name, @Opinion, @Password);
                   Update Notes Set CommentCount = CommentCount + 1 

@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="BoardView.aspx.cs" Inherits="DotNetNote.Board.BoardView" %>
 
+<%@ Register Src="~/Controls/CommentControl.ascx" TagPrefix="uc1" TagName="CommentControl" %>
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <h3 class="text-center">게시판</h3>
@@ -85,28 +88,26 @@
             </tr>
             <tr>
                 <td colspan="4">
-
-                   <%-- <uc1:boardcommentcontrol runat="server"
-                        id="BoardCommentControl" />--%>
-
+                    <%--댓글 다는 컨트롤--%>
+                    <uc1:CommentControl runat="server" ID="CommentControl" />
                 </td>
             </tr>
         </tbody>
     </table>
 
-     <div style="text-align: center;">
-        <asp:HyperLink ID="lnkDelete" runat="server" 
+    <div style="text-align: center;">
+        <asp:HyperLink ID="lnkDelete" runat="server"
             CssClass="btn btn-default">삭제</asp:HyperLink>
-        <asp:HyperLink ID="lnkModify" runat="server" 
+        <asp:HyperLink ID="lnkModify" runat="server"
             CssClass="btn btn-default">수정</asp:HyperLink>
-        <asp:HyperLink ID="lnkReply" runat="server" 
+        <asp:HyperLink ID="lnkReply" runat="server"
             CssClass="btn btn-default">답변</asp:HyperLink>
-        <asp:HyperLink ID="lnkList" runat="server" 
-            NavigateUrl="BoardList.aspx" 
+        <asp:HyperLink ID="lnkList" runat="server"
+            NavigateUrl="BoardList.aspx"
             CssClass="btn btn-default">리스트</asp:HyperLink>
     </div>
 
-    <asp:Label ID="lblError" runat="server" 
+    <asp:Label ID="lblError" runat="server"
         ForeColor="Red" EnableViewState="False"></asp:Label>
     <br />
 
