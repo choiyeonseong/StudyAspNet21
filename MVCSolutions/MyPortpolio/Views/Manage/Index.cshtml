@@ -1,0 +1,62 @@
+﻿@model IEnumerable<MyPortpolio.Models.Manage>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<div class="col-lg col-md ml-auto mr-auto">
+    <div class="card card-login">
+        <div class="section section-contacts" style="padding:20px 0">
+            <div class="row">
+                <div class="col-md-11 ml-auto mr-auto">
+                    <h3 class="text-center" style="color: black; margin-top:0px; font-weight:bold;">화면관리</h3>
+                        <a asp-action="Create" class="btn btn-primary">글쓰기</a>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Cate)
+                                </th>
+                                <th width="50%">
+                                    @Html.DisplayNameFor(model => model.Subject)
+                                </th>
+                                @*<th>
+                                    @Html.DisplayNameFor(model => model.Contents)
+                                </th>*@
+                                <th>
+                                    @Html.DisplayNameFor(model => model.RegDate)
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Cate)
+                                </td>
+                                <td>
+                                    <a asp-action="Details" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Subject)</a>
+                                    
+                                </td>
+                                @*<td>
+                                    @Html.DisplayFor(modelItem => item.Contents)
+                                </td>*@
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.RegDate)
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">수정</a>&nbsp;
+                                    <a asp-action="Delete" asp-route-id="@item.Id"  class="btn btn-sm btn-danger">삭제</a>
+                                </td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
