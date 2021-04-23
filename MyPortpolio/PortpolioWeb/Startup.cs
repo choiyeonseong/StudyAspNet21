@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -7,6 +7,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using PortpolioWeb.Data;
 
 namespace PortpolioWeb
 {
@@ -23,6 +25,9 @@ namespace PortpolioWeb
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<PortpolioWebContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("PortpolioWebContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
