@@ -5,43 +5,46 @@
     Layout = "~/Views/Shared/_ProfileLayout.cshtml";
 }
 
-<h1>Edit</h1>
-
-<h4>Manage</h4>
-<hr />
+<script src="~/plugin/ckeditor_4.16.0_standard/ckeditor/ckeditor.js"></script>
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-8 ml-auto mr-auto text-center">
+        <h2 class="title">Manage</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="Cate" class="control-label"></label>
-                <input asp-for="Cate" class="form-control" />
-                <span asp-validation-for="Cate" class="text-danger"></span>
+            <div class="form-group" style="width:200px">
+                <label asp-for="Cate" class="control-label">구분</label>
+                <select asp-for="Cate" class="form-control">
+                    <option value="Index">Index</option>
+                    <option value="Profile">Profile</option>
+                    <option value="Portpolio">Portpolio</option>
+                </select>                <span asp-validation-for="Cate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Subject" class="control-label"></label>
+                <label asp-for="Subject" class="control-label">제목</label>
                 <input asp-for="Subject" class="form-control" />
                 <span asp-validation-for="Subject" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Contents" class="control-label"></label>
-                <input asp-for="Contents" class="form-control" />
+                <label asp-for="Contents" class="control-label">내용</label>
+                <textarea asp-for="Contents" id="EditorContents" class="form-control" rows="50"></textarea>
+                <script>
+                    var editor = CKEDITOR.replace("EditorContents");
+                    editor.config.allowedContent = true;    // <div> 허용
+                    editor.config.extraAllowedContent = 'a(*)'; // <a> 허용
+                </script>
                 <span asp-validation-for="Contents" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="RegDate" class="control-label"></label>
-                <input asp-for="RegDate" class="form-control" />
-                <span asp-validation-for="RegDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div class="form-group float-right">
+                <input type="submit" value="저장" class="btn btn-primary btn-sm" />&nbsp;
+                <a asp-action="Index" class="btn btn-sm">목록</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 

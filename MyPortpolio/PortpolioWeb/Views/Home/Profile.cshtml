@@ -1,26 +1,25 @@
-﻿
+﻿@model PortpolioWeb.Models.Manage
 @{
     ViewData["Title"] = "Profile";
     Layout = "~/Views/Shared/_ProfileLayout.cshtml";
 }
 
-<div class="owner">
+@Html.Raw(Model.Contents)
+
+
+@*<div class="owner">
     <div class="avatar">
-        <img src="../assets/img/faces/myprofile.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+        <img src="~/assets/img/faces/myprofile.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
     </div>
     <div class="name">
         <h4 class="title">
             Choi Yeon Seong
             <br />
         </h4>
-        <h6 class="description">C# Junior Programmer</h6>
+        <h6 class="description">
+            C# Junior Programmer<br />
+            Pukyong Univ<br />
+            IT Convergence and Application Engineering<br />
+        </h6>
     </div>
-</div>
-
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-
+</div>*@

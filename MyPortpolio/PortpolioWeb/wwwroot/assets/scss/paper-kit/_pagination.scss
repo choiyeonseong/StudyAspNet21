@@ -4,11 +4,11 @@
 .pagination > li:first-child > a,
 .pagination > li:first-child > span,
 .pagination > li:last-child > a,
-.pagination > li:last-child > span{
+.pagination > li:last-child > span {
     background-color: transparent;
-    border: 2px solid $danger-color;
+    border: 2px solid #51CBCE;
     border-radius: 20px;
-    color: $danger-color;
+    color: #51CBCE;
     height: $line-height;
     margin: 0 2px;
     min-width: 36px;
@@ -303,10 +303,10 @@
     color: $white-color;
 }
 
-.page-item.active .page-link{
-    background-color: $danger-color;
+.page-item.active .page-link {
+    background-color: #51CBCE;
     color: white;
-    border-color: $danger-color;
+    border-color: #51CBCE;
 }
 .nav-pills .nav-link{
     border-radius: 0;

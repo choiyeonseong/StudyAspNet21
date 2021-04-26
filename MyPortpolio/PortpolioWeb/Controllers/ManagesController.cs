@@ -58,6 +58,7 @@ namespace PortpolioWeb.Controllers
         {
             if (ModelState.IsValid)
             {
+                manage.RegDate = DateTime.Now;
                 _context.Add(manage);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -97,6 +98,7 @@ namespace PortpolioWeb.Controllers
             {
                 try
                 {
+                    manage.RegDate = DateTime.Now;
                     _context.Update(manage);
                     await _context.SaveChangesAsync();
                 }

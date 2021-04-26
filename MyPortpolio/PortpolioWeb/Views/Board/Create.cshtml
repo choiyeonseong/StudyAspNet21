@@ -1,0 +1,47 @@
+﻿@model PortpolioWeb.Models.Board
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_ProfileLayout.cshtml";
+}
+<script src="~/plugin/ckeditor_4.16.0_standard/ckeditor/ckeditor.js"></script>
+
+<div class="row">
+    <div class="col-md-8 ml-auto mr-auto text-center">
+        <h2 class="title">Board</h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Subject" class="control-label">제목</label>
+                <input asp-for="Subject" class="form-control" />
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Writer" class="control-label">작성자</label>
+                <input asp-for="Writer" class="form-control" />
+                <span asp-validation-for="Writer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contents" class="control-label">내용</label>
+                <textarea asp-for="Contents" id="EditorContents" class="form-control" rows="30"></textarea>
+                <script>
+                    var editor = CKEDITOR.replace("EditorContents");
+                    editor.config.allowedContent = true;    // <div> 허용
+                    editor.config.extraAllowedContent = 'a(*)'; // <a> 허용
+                </script>
+                <span asp-validation-for="Contents" class="text-danger"></span>
+            </div>
+
+            <div class="form-group float-right">
+                <input type="submit" value="저장" class="btn btn-primary btn-sm" />&nbsp;
+                <a asp-action="Index" class="btn btn-sm">목록</a>
+            </div>
+        </form>
+    </div>
+</div>
+

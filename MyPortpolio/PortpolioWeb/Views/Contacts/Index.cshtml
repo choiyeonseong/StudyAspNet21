@@ -8,6 +8,14 @@
 <div class="col-lg-6 ml-auto mr-auto">
     <div class="card card-register" style="max-width:none;">
         <h4 class="title mx-auto">Contact</h4>
+
+        <div class="col text-center text-danger">
+            @if (ViewBag.Message != null)
+            {
+                <span style="color:black; font-weight:bold;">@ViewBag.Message</span>
+            }
+        </div>
+
         <form class="register-form" asp-action="Index">
             <div class="row ">
                 <div class="col-md-6">
@@ -30,16 +38,8 @@
                 <textarea asp-for="Contents" class="form-control" rows="10"></textarea>
                 <span asp-validation-for="Contents" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-danger btn-block btn-round">전송</button>
-            </div>
-            <div class="row">
-                <div class="col text-center text-danger">
-                    @if (ViewBag.Message != null)
-                    {
-                        <span>@ViewBag.Message</span>
-                    }
-                </div>
+            <div class="form-group" >
+                <button type="submit" class="btn btn-block btn-round" >전송</button>
             </div>
         </form>
     </div>

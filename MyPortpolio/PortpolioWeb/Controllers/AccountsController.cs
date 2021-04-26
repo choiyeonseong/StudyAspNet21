@@ -22,7 +22,7 @@ namespace PortpolioWeb.Controllers
 
         // GET: Accounts
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Login()
         {
             var account = new Account();
             return View(account);
@@ -30,25 +30,23 @@ namespace PortpolioWeb.Controllers
 
         // GET: Accounts/Details/5
         [HttpPost]
-        public async Task<IActionResult> Index([Bind("Email, Password")] Account account)
+        public async Task<IActionResult> Login([Bind("Email, Password")] Account account)
         {
             if (ModelState.IsValid)
             {
                 var result = CheckAccount(account.Email, account.Password);
                 if (result == null)
-                {
-                    // 저장된 계정이 없음 - 다시 로그인 창
+                {   // 계정이 없음 - 화면을 Home/Index로 이동
                     ViewBag.Message = "해당 계정이 없습니다.";
-                    return View("Index");
+                    return View("Login");
                 }
                 else
-                {
-                    // 로그인 성공 - 화면을 Home/Index로 이동
-                    HttpContext.Session.SetString("UserEmail", result.Email);
+                {   // 로그인
+                   HttpContext.Session.SetString("UserEmail", result.Email);
                     return RedirectToAction("Index", "Home");
                 }
             }
-            return View("Index");
+            return View("Login");
         }
 
         private Account CheckAccount(string email, string password)
