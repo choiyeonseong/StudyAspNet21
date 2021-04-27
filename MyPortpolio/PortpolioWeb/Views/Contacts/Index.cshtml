@@ -7,8 +7,12 @@
 
 <div class="col-lg-6 ml-auto mr-auto">
     <div class="card card-register" style="max-width:none;">
-        <h4 class="title mx-auto">Contact</h4>
-
+        <h3 class="title mx-auto">Contact</h3>
+        <div>
+            <h5 class="content text-center">
+            채용에 관심있으신 분은 여기로 연락바랍니다.
+            </h5>
+        </div>
         <div class="col text-center text-danger">
             @if (ViewBag.Message != null)
             {
@@ -35,7 +39,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Contents" class="control-label"></label>
-                <textarea asp-for="Contents" class="form-control" rows="10"></textarea>
+                <textarea asp-for="Contents" class="form-control" rows="5"></textarea>
                 <span asp-validation-for="Contents" class="text-danger"></span>
             </div>
             <div class="form-group" >
