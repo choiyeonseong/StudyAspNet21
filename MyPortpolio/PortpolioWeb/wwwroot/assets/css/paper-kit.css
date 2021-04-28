@@ -97,7 +97,7 @@
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary,
 .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {
   color: #fff;
-  background: #60AEB0;
+  background: #358762;
 }
 
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info,
@@ -271,7 +271,7 @@
 }
 
 .bootstrap-switch.bootstrap-switch-on .bootstrap-switch-primary {
-  background-color: #60AEB0;
+  background-color: #358762;
 }
 
 .bootstrap-switch.bootstrap-switch-on .bootstrap-switch-info {
@@ -464,12 +464,12 @@
 }
 
 .slider .noUi-connect {
-  background-color: #60AEB0;
+  background-color: #358762;
   border-radius: 4px;
 }
 
 .slider .noUi-handle {
-  border-color: #60AEB0;
+  border-color: #358762;
 }
 
 .slider.slider-info .noUi-connect {
@@ -984,6 +984,7 @@
   -o-transition: all 150ms linear;
   -ms-transition: all 150ms linear;
   transition: all 150ms linear;
+  font-family: NanumGothic;
 }
 
 .btn.btn-border,
@@ -1113,8 +1114,8 @@ fieldset[disabled] .btn.active {
 }
 
 .btn-primary {
-  background-color: #60AEB0;
-  border-color: #60AEB0;
+  background-color: #358762;
+  border-color: #358762;
   color: #FFFFFF;
   opacity: 1;
   filter: alpha(opacity=100);
@@ -1171,7 +1172,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-primary.btn-link {
-  color: #60AEB0;
+  color: #358762;
 }
 
 .btn-primary.btn-link:hover,
@@ -1185,7 +1186,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-primary.btn-link .caret {
-  border-top-color: #60AEB0;
+  border-top-color: #358762;
 }
 
 .btn-primary .caret {
@@ -1656,8 +1657,8 @@ fieldset[disabled] .btn-outline-default.active {
 }
 
 .btn-outline-primary {
-  border-color: #60AEB0;
-  color: #60AEB0;
+  border-color: #358762;
+  color: #358762;
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -1670,9 +1671,9 @@ fieldset[disabled] .btn-outline-default.active {
 .btn-outline-primary:active:hover,
 .btn-outline-primary.active:focus,
 .show>.btn-outline-primary.dropdown-toggle {
-  background-color: #60AEB0 !important;
+  background-color: #358762 !important;
   color: rgba(255, 255, 255, 0.8);
-  border-color: #60AEB0 !important;
+  border-color: #358762 !important;
 }
 
 .btn-outline-primary:hover .caret,
@@ -1715,7 +1716,7 @@ fieldset[disabled] .btn-outline-primary.focus,
 fieldset[disabled] .btn-outline-primary:active,
 fieldset[disabled] .btn-outline-primary.active {
   background-color: transparent;
-  border-color: #60AEB0;
+  border-color: #358762;
 }
 
 .btn-outline-success {
@@ -2627,11 +2628,11 @@ textarea.form-control {
 }
 
 .progress-bar {
-  background-color: #60AEB0;
+  background-color: #358762;
 }
 
 .progress-bar-primary {
-  background-color: #60AEB0;
+  background-color: #358762;
 }
 
 .progress-bar-info {
@@ -2672,7 +2673,7 @@ textarea.form-control {
 }
 
 .badge-primary {
-  background-color: #60AEB0;
+  background-color: #358762;
 }
 
 .badge-info {
@@ -2702,9 +2703,9 @@ textarea.form-control {
 .pagination > li:last-child > a,
 .pagination > li:last-child > span {
     background-color: transparent;
-    border: 2px solid #60AEB0;
+    border: 2px solid #358762;
     border-radius: 20px;
-    color: #60AEB0;
+    color: #358762;
     height: 36px;
     margin: 0 2px;
     min-width: 36px;
@@ -2722,8 +2723,8 @@ textarea.form-control {
     .pagination > li.active > span:hover,
     .pagination > li.active > a:focus,
     .pagination > li.active > span:focus {
-        background-color: #60AEB0;
-        border-color: #60AEB0;
+        background-color: #358762;
+        border-color: #358762;
         color: #FFFFFF;
     }
 
@@ -2734,8 +2735,8 @@ textarea.form-control {
 .pagination-primary>li:first-child>span,
 .pagination-primary>li:last-child>a,
 .pagination-primary>li:last-child>span {
-  border: 2px solid #60AEB0;
-  color: #60AEB0;
+  border: 2px solid #358762;
+  color: #358762;
 }
 
 .nav-pills-primary>li.active>a,
@@ -2750,8 +2751,8 @@ textarea.form-control {
 .pagination-primary>li.active>span:hover,
 .pagination-primary>li.active>a:focus,
 .pagination-primary>li.active>span:focus {
-  background-color: #60AEB0 !important;
-  border-color: #60AEB0 !important;
+  background-color: #358762 !important;
+  border-color: #358762 !important;
   color: #FFFFFF;
 }
 
@@ -2925,7 +2926,7 @@ textarea.form-control {
 }
 
 .nav-blue>li.active a {
-  color: #60AEB0;
+  color: #358762;
 }
 
 .nav-azure>li.active a {
@@ -2987,7 +2988,7 @@ textarea.form-control {
 
 .nav-pills-primary .nav-item.show .nav-link,
 .nav-pills-primary .nav-link.active {
-  background-color: #60AEB0 !important;
+  background-color: #358762 !important;
 }
 
 .nav-pills-info .nav-item.show .nav-link,
@@ -3019,15 +3020,15 @@ textarea.form-control {
 .pagination > li.active > span:hover,
 .pagination > li.active > a:focus,
 .pagination > li.active > span:focus {
-    background-color: #60AEB0;
-    border-color: #60AEB0;
+    background-color: #358762;
+    border-color: #358762;
     color: #FFFFFF;
 }
 
 .page-item.active .page-link {
-    background-color: #60AEB0;
+    background-color: #358762;
     color: white;
-    border-color: #60AEB0;
+    border-color: #358762;
 }
 
 .nav-pills .nav-link {
@@ -3066,6 +3067,7 @@ textarea {
   -webkit-font-smoothing: antialiased;
   font-family: "Montserrat", "Helvetica", Arial, sans-serif;
   font-weight: 300;
+  font-family:NanumGothic;
 }
 
 h1,
@@ -3166,7 +3168,7 @@ h3 .small {
 .footer-big h5,
 .footer-big h4,
 .media .media-heading {
-  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  font-family: NanumGothic,"Montserrat", "Helvetica", Arial, sans-serif;
 }
 
 .title,
@@ -3192,7 +3194,8 @@ h3 .small {
 }
 
 .description {
-  color: #9A9A9A;
+    color: #9A9A9A;
+    font-family: 'NanumGothic';
 }
 
 blockquote small {
@@ -3205,7 +3208,7 @@ blockquote small {
 
 .text-primary,
 .text-primary:hover {
-  color: #60AEB0 !important;
+  color: #358762 !important;
 }
 
 .text-info,
@@ -3277,14 +3280,16 @@ blockquote small {
 }
 
 .title {
-  margin-top: 30px;
-  margin-bottom: 25px;
-  min-height: 32px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    min-height: 32px;
+    font-family: NanumGothic;
 }
 
-.title.text-center {
-  margin-bottom: 50px;
-}
+    .title.text-center {
+        margin-bottom: 50px;
+        font-family: NanumGothic;
+    }
 
 /*     General overwrite     */
 
@@ -3292,7 +3297,7 @@ body {
   color: #66615b;
   font-size: 14px;
   font-weight: 300;
-  font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+  font-family: NanumGothic,'Montserrat', "Helvetica", Arial, sans-serif;
 }
 
 a {
@@ -3389,7 +3394,7 @@ input[type="file"]>input[type="button"]::-moz-focus-inner {
 /*       CT colors          */
 
 .ct-blue {
-  color: #60AEB0;
+  color: #358762;
 }
 
 .ct-azure {
@@ -3502,7 +3507,7 @@ input[type="file"]>input[type="button"]::-moz-focus-inner {
 .offline-doc .page-header .page-header-image {
   position: absolute;
   background-size: cover;
-  background-position: center center;
+  background-position: center bottom;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -3513,7 +3518,7 @@ input[type="file"]>input[type="button"]::-moz-focus-inner {
 }
 
 .offline-doc .page-header:after {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   content: "";
   display: block;
   height: 100%;
@@ -3544,7 +3549,7 @@ input[type="file"]>input[type="button"]::-moz-focus-inner {
 }
 
 .label-primary {
-  background-color: #60AEB0;
+  background-color: #358762;
 }
 
 .label-info {
@@ -4407,12 +4412,12 @@ License - nucleoapp.com/license/
 }
 
 .nav-pills-primary .nav-item .nav-link {
-  border: 1px solid #60AEB0 !important;
-  color: #60AEB0 !important;
+  border: 1px solid #358762 !important;
+  color: #358762 !important;
 }
 
 .nav-pills-primary .nav-item .nav-link.active {
-  border: 1px solid #60AEB0 !important;
+  border: 1px solid #358762 !important;
   color: #FFFFFF !important;
 }
 
@@ -5683,7 +5688,7 @@ License - nucleoapp.com/license/
 }
 
 .icon-primary {
-  color: #60AEB0;
+  color: #358762;
 }
 
 .icon-info {
@@ -6176,7 +6181,7 @@ License - nucleoapp.com/license/
 .card .header .actions {
   position: absolute;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.76);
+  background-color: rgba(0, 0, 0, 0.3);
   top: 0;
   left: 0;
   width: 100%;
@@ -6221,19 +6226,21 @@ License - nucleoapp.com/license/
   padding: 20px;
 }
 
-.card .card-body .card-title {
-  margin: 5px 0 0 0;
-}
+    .card .card-body .card-title {
+        margin: 5px 0 0 0;
+        font-family: 'NanumGothic';
+    }
 
 .card .card-body .card-category~.card-title {
   margin-top: 5px;
 }
 
-.card .card-text {
-  font-size: 15px;
-  color: #66615b;
-  padding-bottom: 15px;
-}
+    .card .card-text {
+        font-size: 15px;
+        color: #66615b;
+        padding-bottom: 15px;
+        font-family: 'NanumGothic';
+    }
 
 .card h6 {
   font-size: 12px;
@@ -6537,7 +6544,7 @@ License - nucleoapp.com/license/
 }
 
 .card-register {
-    background-color: #60AEB0;
+    background-color: #358762;
     border-radius: 8px;
     color: #fff;
     max-width: 350px;
@@ -6614,7 +6621,7 @@ License - nucleoapp.com/license/
 
 .page-header {
   background-color: #B2AFAB;
-  background-position: center center;
+  background-position: center bottom;
   background-size: cover;
   min-height: 100vh;
   max-height: 999px;
@@ -6628,7 +6635,7 @@ License - nucleoapp.com/license/
 }
 
 .page-header .filter::after {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   content: "";
   display: block;
   height: 100%;
@@ -6930,7 +6937,7 @@ License - nucleoapp.com/license/
 }
 
 .section-light-blue {
-  background-color: #60AEB0;
+  background-color: #358762;
   color: #FFFFFF;
 }
 

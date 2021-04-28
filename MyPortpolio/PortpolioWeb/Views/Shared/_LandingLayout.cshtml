@@ -5,8 +5,9 @@
 
 <body class="landing-page sidebar-collapse">
     @Html.Partial("NavPage.cshtml")
-    <div class="page-header" data-parallax="true" style="background-image: url('../assets/img/daniel-olahh.jpg');">
-        <div class="filter"></div>
+    <div class="page-header" data-parallax="true" 
+         style="background-image: url('../assets/img/myimg/violetmoon_background.jpg');">
+        <div class="filter" ></div>
         <div class="container">
             <div class="motto text-center">
                 <h1>My Portpolio</h1>
@@ -179,7 +180,7 @@
                         <br />
                         <div class="row">
                             <div class="col-md-4 ml-auto mr-auto">
-                                <button asp-controller="Contacts" asp-action="Index" type="button" class="btn btn-info btn-lg btn-round"><i class="fa fa-heart"></i> Keep in Touch?</button>
+                                <a asp-controller="Contacts" asp-action="Index" class="btn btn-primary btn-lg btn-round"><i class="fa fa-heart"></i> Keep in Touch?</a>
                             </div>
                         </div>
                         <!--<form class="contact-form">

@@ -8,14 +8,13 @@
 
     @Html.Partial("NavPage.cshtml")
 
-    <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('/assets/img/fabio-mangione.jpg');">
+    <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('/assets/img/myimg/violet_background.jpg');">
         <div class="filter"></div>
     </div>
-    <div class=" profile-content">
+    <div class="profile-content">
         <div class="container">
             @RenderBody()
         </div>
-
     </div>
     @Html.Partial("FooterPage.cshtml")
     @await RenderSectionAsync("Scripts", required: false)
