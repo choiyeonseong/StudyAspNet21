@@ -13,51 +13,52 @@
 <div class="row">
     <div class="col-md ml-auto mr-auto">
         <div class="profile-tabs">
-           
+
             <div class="row">
                 @*
+                                <div class="col">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="~/portpolioIMG/PetIneterest.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title font-weight-normal">Pinterest</h4>
+                                <p class="card-text">반응형 웹 그리드 레이아웃 웹페이지 - Pinterest 따라하기</p>
+                                <a href="https://github.com/choiyeonseong/StudyHtml#project" class="btn btn-primary">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                         <div class="col">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="~/portpolioIMG/BookPopup.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title font-weight-normal">책 대여점</h4>
+                                <p class="card-text">책 대여점 데스크톱 앱</p>
+                                <a href="https://github.com/choiyeonseong/StudyDesktopApp#winform-%EC%B1%85-%EB%8C%80%EC%97%AC-%EA%B4%80%EB%A6%AC" class="btn btn-primary">Github</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col">
-            <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="~/portpolioIMG/PetIneterest.png" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title font-weight-normal">Pinterest</h4>
-                    <p class="card-text">반응형 웹 그리드 레이아웃 웹페이지 - Pinterest 따라하기</p>
-                    <a href="https://github.com/choiyeonseong/StudyHtml#project" class="btn btn-primary">Github</a>
-                </div>
-            </div>
-        </div>
-             <div class="col">
-            <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="~/portpolioIMG/BookPopup.png" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title font-weight-normal">책 대여점</h4>
-                    <p class="card-text">책 대여점 데스크톱 앱</p>
-                    <a href="https://github.com/choiyeonseong/StudyDesktopApp#winform-%EC%B1%85-%EB%8C%80%EC%97%AC-%EA%B4%80%EB%A6%AC" class="btn btn-primary">Github</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="~/portpolioIMG/StoreList.png" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title font-weight-normal">ERP 재고관리 앱</h4>
-                    <p class="card-text">창고 관리 시스템 데스크톱 앱</p>
-                    <a href="https://github.com/choiyeonseong/MiniProject_Desktop#erp-%EC%9E%AC%EA%B3%A0%EA%B4%80%EB%A6%AC-%EC%95%B1" class="btn btn-primary">Github</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="~/portpolioIMG/mainwindow.png" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title font-weight-normal">영화 즐겨찾기</h4>
-                    <p class="card-text">Naver 영화 정보와 Youtube 트레일러를 볼 수 있는 검색 시스템 데스크톱 앱</p>
-                    <a href="https://github.com/choiyeonseong/MiniProject_Desktop#naver-movie-finder" class="btn btn-primary">Github</a>
-                </div>
-            </div>
-        </div>
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="~/portpolioIMG/StoreList.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title font-weight-normal">ERP 재고관리 앱</h4>
+                                <p class="card-text">창고 관리 시스템 데스크톱 앱</p>
+                                <a href="https://github.com/choiyeonseong/MiniProject_Desktop#erp-%EC%9E%AC%EA%B3%A0%EA%B4%80%EB%A6%AC-%EC%95%B1" class="btn btn-primary">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="~/portpolioIMG/mainwindow.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title font-weight-normal">영화 즐겨찾기</h4>
+                                <p class="card-text">Naver 영화 정보와 Youtube 트레일러를 볼 수 있는 검색 시스템 데스크톱 앱</p>
+                                <a href="https://github.com/choiyeonseong/MiniProject_Desktop#naver-movie-finder" class="btn btn-primary">Github</a>
+                            </div>
+                        </div>
+                    </div>
                 *@
 
+                @*manage 페이지에서 작성하고 DB에 저장된 내용을 가져오기*@
                 @*@Html.Raw(Model.Contents)*@
 
 
@@ -69,43 +70,43 @@
                             <div class="col-md-6 col-lg-4 mb-5">
                                 <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
                                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img class="img-fluid" src="~/assets/img/portfolio/cabin.png" alt="..." />
+                                    <img class="img-fluid" src="~/portpolioIMG/PetIneterest.png" alt="..." />
                                 </div>
                             </div>
                             <!-- Portfolio Item 2-->
                             <div class="col-md-6 col-lg-4 mb-5">
                                 <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
                                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img class="img-fluid" src="~/assets/img/portfolio/cake.png" alt="..." />
+                                    <img class="img-fluid" src="~/portpolioIMG/BookPopup.png" alt="..." />
                                 </div>
                             </div>
                             <!-- Portfolio Item 3-->
                             <div class="col-md-6 col-lg-4 mb-5">
                                 <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
                                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img class="img-fluid" src="~/assets/img/portfolio/circus.png" alt="..." />
+                                    <img class="img-fluid" src="~/portpolioIMG/StoreList.png" alt="..." />
                                 </div>
                             </div>
                             <!-- Portfolio Item 4-->
                             <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                                 <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
                                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img class="img-fluid" src="~/assets/img/portfolio/game.png" alt="..." />
+                                    <img class="img-fluid" src="~/portpolioIMG/mainwindow.png" alt="..." />
                                 </div>
                             </div>
                             <!-- Portfolio Item 5-->
                             <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
                                 <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
                                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-plus fa-3x"></i></div>
                                     </div>
                                     <img class="img-fluid" src="~/assets/img/portfolio/safe.png" alt="..." />
                                 </div>
@@ -114,7 +115,7 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
                                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fa fa-plus fa-3x"></i></div>
                                     </div>
                                     <img class="img-fluid" src="~/assets/img/portfolio/submarine.png" alt="..." />
                                 </div>
@@ -129,28 +130,28 @@
                     <div class="modal-dialog modal-xl" role="document">
                         <div class="modal-content">
                             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                                <span aria-hidden="true"><i class="fa fa-times"></i></span>
                             </button>
                             <div class="modal-body text-center">
                                 <div class="container">
                                     <div class="row justify-content-center">
                                         <div class="col-lg-8">
                                             <!-- Portfolio Modal - Title-->
-                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Log Cabin</h2>
+                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">PetInterest</h2>
                                             <!-- Icon Divider-->
                                             <div class="divider-custom">
                                                 <div class="divider-custom-line"></div>
-                                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                                <div class="divider-custom-icon"><i class="fa fa-star"></i></div>
                                                 <div class="divider-custom-line"></div>
                                             </div>
                                             <!-- Portfolio Modal - Image-->
-                                            <img class="img-fluid rounded mb-5" src="~/assets/img/portfolio/cabin.png" alt="..." />
+                                            <img class="img-fluid rounded mb-5" src="~/portpolioIMG/PetIneterest.png" alt="..." />
                                             <!-- Portfolio Modal - Text-->
-                                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                            <button class="btn btn-primary" data-dismiss="modal">
-                                                <i class="fas fa-times fa-fw"></i>
-                                                Close Window
-                                            </button>
+                                            <p class="mb-5">반응형 웹 그리드 레이아웃 웹페이지 - Pinterest 따라하기</p>
+                                            <a class="btn btn-primary" href="https://github.com/choiyeonseong/StudyHtml#project">
+                                                <i class="fa fa-github"></i>
+                                                Github
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -163,28 +164,28 @@
                     <div class="modal-dialog modal-xl" role="document">
                         <div class="modal-content">
                             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                                <span aria-hidden="true"><i class="fa fa-times"></i></span>
                             </button>
                             <div class="modal-body text-center">
                                 <div class="container">
                                     <div class="row justify-content-center">
                                         <div class="col-lg-8">
                                             <!-- Portfolio Modal - Title-->
-                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Tasty Cake</h2>
+                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">책 대여점</h2>
                                             <!-- Icon Divider-->
                                             <div class="divider-custom">
                                                 <div class="divider-custom-line"></div>
-                                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                                <div class="divider-custom-icon"><i class="fa fa-star"></i></div>
                                                 <div class="divider-custom-line"></div>
                                             </div>
                                             <!-- Portfolio Modal - Image-->
-                                            <img class="img-fluid rounded mb-5" src="~/assets/img/portfolio/cake.png" alt="..." />
+                                            <img class="img-fluid rounded mb-5" src="~/portpolioIMG/BookPopup.png" alt="..." />
                                             <!-- Portfolio Modal - Text-->
-                                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                            <button class="btn btn-primary" data-dismiss="modal">
-                                                <i class="fas fa-times fa-fw"></i>
-                                                Close Window
-                                            </button>
+                                            <p class="mb-5">책 대여점 데스크톱 앱 - CRUD 구현</p>
+                                            <a class="btn btn-primary" href="https://github.com/choiyeonseong/StudyDesktopApp#winform-%EC%B1%85-%EB%8C%80%EC%97%AC-%EA%B4%80%EB%A6%AC">
+                                                <i class="fa fa-github"></i>
+                                                Github
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -197,28 +198,28 @@
                     <div class="modal-dialog modal-xl" role="document">
                         <div class="modal-content">
                             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                                <span aria-hidden="true"><i class="fa fa-times"></i></span>
                             </button>
                             <div class="modal-body text-center">
                                 <div class="container">
                                     <div class="row justify-content-center">
                                         <div class="col-lg-8">
                                             <!-- Portfolio Modal - Title-->
-                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Circus Tent</h2>
+                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">ERP 재고관리 앱</h2>
                                             <!-- Icon Divider-->
                                             <div class="divider-custom">
                                                 <div class="divider-custom-line"></div>
-                                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                                <div class="divider-custom-icon"><i class="fa fa-star"></i></div>
                                                 <div class="divider-custom-line"></div>
                                             </div>
                                             <!-- Portfolio Modal - Image-->
-                                            <img class="img-fluid rounded mb-5" src="~/assets/img/portfolio/circus.png" alt="..." />
+                                            <img class="img-fluid rounded mb-5" src="~/portpolioIMG/StoreList.png" alt="..." />
                                             <!-- Portfolio Modal - Text-->
-                                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                            <button class="btn btn-primary" data-dismiss="modal">
-                                                <i class="fas fa-times fa-fw"></i>
-                                                Close Window
-                                            </button>
+                                            <p class="mb-5">창고 관리 시스템 데스크톱 앱 - CRUD 구현, PDF, Excel export 구현</p>
+                                            <a class="btn btn-primary" href="https://github.com/choiyeonseong/MiniProject_Desktop#naver-movie-finder">
+                                                <i class="fa fa-github"></i>
+                                                Github
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -231,28 +232,28 @@
                     <div class="modal-dialog modal-xl" role="document">
                         <div class="modal-content">
                             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                                <span aria-hidden="true"><i class="fa fa-times"></i></span>
                             </button>
                             <div class="modal-body text-center">
                                 <div class="container">
                                     <div class="row justify-content-center">
                                         <div class="col-lg-8">
                                             <!-- Portfolio Modal - Title-->
-                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">Controller</h2>
+                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">영화 즐겨찾기</h2>
                                             <!-- Icon Divider-->
                                             <div class="divider-custom">
                                                 <div class="divider-custom-line"></div>
-                                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                                <div class="divider-custom-icon"><i class="fa fa-star"></i></div>
                                                 <div class="divider-custom-line"></div>
                                             </div>
                                             <!-- Portfolio Modal - Image-->
-                                            <img class="img-fluid rounded mb-5" src="~/assets/img/portfolio/game.png" alt="..." />
+                                            <img class="img-fluid rounded mb-5" src="~/portpolioIMG/mainwindow.png" alt="..." />
                                             <!-- Portfolio Modal - Text-->
-                                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                            <button class="btn btn-primary" data-dismiss="modal">
-                                                <i class="fas fa-times fa-fw"></i>
-                                                Close Window
-                                            </button>
+                                            <p class="mb-5">Naver 영화 정보와 Youtube 트레일러를 볼 수 있는 검색 시스템 데스크톱 앱</p>
+                                            <a class="btn btn-primary" href="https://github.com/choiyeonseong/MiniProject_Desktop#naver-movie-finder">
+                                                <i class="fa fa-github"></i>
+                                                Github
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -265,7 +266,7 @@
                     <div class="modal-dialog modal-xl" role="document">
                         <div class="modal-content">
                             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                                <span aria-hidden="true"><i class="fa fa-times"></i></span>
                             </button>
                             <div class="modal-body text-center">
                                 <div class="container">
@@ -276,17 +277,17 @@
                                             <!-- Icon Divider-->
                                             <div class="divider-custom">
                                                 <div class="divider-custom-line"></div>
-                                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                                <div class="divider-custom-icon"><i class="fa fa-star"></i></div>
                                                 <div class="divider-custom-line"></div>
                                             </div>
                                             <!-- Portfolio Modal - Image-->
                                             <img class="img-fluid rounded mb-5" src="~/assets/img/portfolio/safe.png" alt="..." />
                                             <!-- Portfolio Modal - Text-->
                                             <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                            <button class="btn btn-primary" data-dismiss="modal">
-                                                <i class="fas fa-times fa-fw"></i>
-                                                Close Window
-                                            </button>
+                                            <a class="btn btn-primary" data-dismiss="modal" href="https://github.com/choiyeonseong/StudyDesktopApp#winform-%EC%B1%85-%EB%8C%80%EC%97%AC-%EA%B4%80%EB%A6%AC">
+                                                <i class="fa fa-github"></i>
+                                                Github
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -299,7 +300,7 @@
                     <div class="modal-dialog modal-xl" role="document">
                         <div class="modal-content">
                             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                                <span aria-hidden="true"><i class="fa fa-times"></i></span>
                             </button>
                             <div class="modal-body text-center">
                                 <div class="container">
@@ -310,17 +311,17 @@
                                             <!-- Icon Divider-->
                                             <div class="divider-custom">
                                                 <div class="divider-custom-line"></div>
-                                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                                <div class="divider-custom-icon"><i class="fa fa-star"></i></div>
                                                 <div class="divider-custom-line"></div>
                                             </div>
                                             <!-- Portfolio Modal - Image-->
                                             <img class="img-fluid rounded mb-5" src="~/assets/img/portfolio/submarine.png" alt="..." />
                                             <!-- Portfolio Modal - Text-->
                                             <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                            <button class="btn btn-primary" data-dismiss="modal">
-                                                <i class="fas fa-times fa-fw"></i>
-                                                Close Window
-                                            </button>
+                                            <a class="btn btn-primary" data-dismiss="modal" href="https://github.com/choiyeonseong/StudyDesktopApp#winform-%EC%B1%85-%EB%8C%80%EC%97%AC-%EA%B4%80%EB%A6%AC">
+                                                <i class="fa fa-github"></i>
+                                                Github
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
