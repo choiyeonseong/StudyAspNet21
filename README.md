@@ -60,6 +60,6 @@
 # ASP.NET CORE MVC 웹
 ## 프로젝트
 
-![WebSite](ref_img/portpolio.png)
+![WebSite](ref_img/portfolio.png)
 
 [포트폴리오](https://github.com/choiyeonseong/StudyAspNet21/tree/main/MyPortpolio/PortpolioWeb)
